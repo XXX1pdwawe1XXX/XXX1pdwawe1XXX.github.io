@@ -2,4 +2,4 @@ body {text-align :center; font-family :Courier New;}
 .mainbody {text-align :center; background-color:white; position:fixed; }
 .widget {text-align :right;}
 .info {background-color:#ffffff; position:absolute; text-align:right;}
-.vid {text-align :center;}
+.vid {text-align :center; top:15%;}
