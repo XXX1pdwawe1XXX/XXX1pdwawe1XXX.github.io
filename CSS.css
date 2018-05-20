@@ -1,5 +1,5 @@
 body {text-align :center; font-family :Courier New;}
 .mainbody {text-align :center; background-color:white; position:fixed; }
-.widget {text-align :right;}
+.widget {text-align :left; top :15px;}
 .info {background-color:#ffffff; position:absolute; text-align:right;}
 .vid {text-align :center; top:15px;}
