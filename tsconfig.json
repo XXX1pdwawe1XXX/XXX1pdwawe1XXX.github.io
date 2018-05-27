@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom", "esnext.asynciterable"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "logger": ["src/modules/logger.ts"],
+      "raven": ["src/modules/sentry.ts"],
+      "locales": ["src/app/locales"],
+      "locales/*": ["src/app/locales/*"],
+      "notify": ["src/app/notify.tsx"],
+      "styled-elements/*": ["src/modules/styled-elements/*"],
+      "typed-emotion": ["src/controllers/emotion/index.ts"],
+      "queries": ["src/store/actions/graphql/queries.ts"],
+      "socket-io": ["src/controllers/socket-io"],
+      "fluent": ["src/controllers/cerebral/fluent.ts"],
+      "emoji": ["src/components/Messages/Message/Markdown/elements/emoji.ts"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}

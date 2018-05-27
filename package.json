@@ -1,0 +1,71 @@
+{
+  "name": "embed",
+  "main": "src/index.tsx",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/channels/",
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:7000",
+      "ws": true
+    }
+  },
+  "dependencies": {
+    "@cerebral/fluent": "^1.0.3",
+    "@cerebral/react": "^4.0.0-1526222433248",
+    "@cerebral/router": "^3.2.2",
+    "@types/highlight.js": "^9.12.2",
+    "@types/lodash": "^4.14.108",
+    "@types/raven-js": "^3.10.0",
+    "@types/react-intl": "^2.3.8",
+    "@types/react-notification-system": "^0.2.37",
+    "@types/recompose": "^0.26.1",
+    "@types/socket.io-client": "^1.4.32",
+    "babel-plugin-emotion": "^9.1.2",
+    "cerebral": "^5.0.0-1526222433248",
+    "emotion": "^9.1.2",
+    "emotion-theming": "^9.1.2",
+    "function-pipe": "^1.2.1",
+    "graphql": "^0.13.2",
+    "graphql-request": "^1.5.1",
+    "graphql-tag": "^2.8.0",
+    "highlight.js": "^9.12.0",
+    "kolor": "^1.1.9",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1",
+    "react": "^16.3.2",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.3.2",
+    "react-easy-emoji": "^1.1.0",
+    "react-emotion": "^9.1.2",
+    "react-icons": "^2.2.7",
+    "react-intl": "^2.4.0",
+    "react-notification-system": "^0.2.17",
+    "react-scripts-ts": "2.16.0",
+    "react-transition-group": "^2.3.1",
+    "recompose": "^0.27.0",
+    "scroll-into-view-if-needed": "^2.2.2",
+    "simple-markdown": "^0.4.0",
+    "socket.io-client": "^2.1.0",
+    "textarea-caret": "^3.1.0",
+    "uuid": "^3.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "pull": "git stash && git pull && yarn && yarn build",
+    "precommit": "pretty-quick --staged"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.0.10",
+    "@types/react": "16.3.11",
+    "@types/react-dom": "^16.0.5",
+    "husky": "^0.14.3",
+    "prettier": "^1.12.1",
+    "pretty-quick": "^1.4.1",
+    "typescript": "^2.8.1"
+  }
+}
