@@ -9,11 +9,23 @@
     a:hover, a:active {
     background-color: #919191;
 }
+    .zoom {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 </style><body>
 <h1>User Content <a href="Arkwb.html">Return to Site</a></h1>
     <h2>Art From Jake(Eelman)</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/agfMuhceI7w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h2>Art From Kitty</h2><img src="https://steamuserimages-a.akamaihd.net/ugc/964220652535957362/83D1F5CDEEE0E1E4F91D97B79E359307ECB81113/" height="315" width="560"/>
-    <img src="https://steamuserimages-a.akamaihd.net/ugc/964220282113416648/CF44BAE9D41EAB39BBC62E87D1ACFED995ABD5DF/" height="315" width="560"/>
+    <h2>Art From Kitty</h2><div class="zoom"><img src="https://steamuserimages-a.akamaihd.net/ugc/964220652535957362/83D1F5CDEEE0E1E4F91D97B79E359307ECB81113/" height="315" width="560"/></div>
+    <div class="zoom"><img src="https://steamuserimages-a.akamaihd.net/ugc/964220282113416648/CF44BAE9D41EAB39BBC62E87D1ACFED995ABD5DF/" height="315" width="560"/></div>
 
 
 
