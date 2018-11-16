@@ -120,8 +120,16 @@
       "Description":"Carnotaurus",
       "Level":240,
       "Price":150,
-      "Neutered":true,
+      "Neutered":false,
       "Blueprint":"Blueprint'/Game/PrimalEarth/Dinos/Carno/Carno_Character_BP.Carno_Character_BP'"
+    },
+        "wyvfir":{  
+      "Type":"dino",
+      "Description":"FireWyvern",
+      "Level":240,
+      "Price":400,
+      "Neutered":false,
+      "Blueprint":"Blueprint'/Game/ScorchedEarth/Dinos/Wyvern/Wyvern_Character_BP_Fire.Wyvern_Character_BP_Fire'"
     },
     "crate25":{  
       "Type":"beacon",
