@@ -1,45 +1,81 @@
+
 <!DOCTYPE html><html>
 <head>
 <title>FTG SE Server</title>
+<link rel="stylesheet" type="text/css" href="TFG_Stylingsheet.css">
 <style>
 .discord{text-align:right;}
   body{text-align:right;background-color:#2C2F33;color:white; font-family:Georgia;}
   h1{text-align:center;}
   h2{text-align:left; text-align:left;}
-  .ri{ border:5px solid black; position:absolute;text-align:left;}
+  .r/i{ border:5px solid black; position:absolute;text-align:left;}
   p{text-align:left;}
    a:link, a:visited {
     background-color:#f7f7f7; color: black; padding: 5px 5px; text-align: center; text-decoration: none; display: inline-block;} a:hover, a:active {background-color: #919191;}
 	
   </style>
 </head>
-<body>
-  <h1>Welcome to The Future Guard's Space Engineers server</h1>
-  <div class="ri">
-  <h2>Rules</h2>
-  <p><br>1. No DDoSing, hacking or any other action that may harm the server or it's users.</br>
-	 <br>2. Please follow the Future Guard discord rules when it comes to respect and appropriate behavior. <a href="https://discord.gg/7wYkNbG">Discord</a></br>
-	 <br>3. Do not harass or anger the Admins. If done so they have the full right to ban or kick you.</br>
-	 <br>4. If inside of CoolBeansCity please follow the rules listed there as well</br>
-  
-  
-  </p>
-  
-  <h2>Other Information</h2>
-  <p><br>1. If you are interested in playing on this server for long amounts of time I highly recommend you join the <a href="https://discord.gg/7wYkNbG">Future Guard discord</a>. </br>
-  <br>2. If you have any questions about the admininistration or events concering the server contact @XXX_pdwλwe_XXX™ on the discord. If it is a private matter first ping me once. I will then respond in the dms where we can privately chat.</br>
-  <br>3. Do not ping me if your question in concering the discord I recommend using the chat given to you. Again I am not the owner of the discord just the Space Engineers server.</br>
-  <br>4. If the server is not running or you notice and issue contact me I will respond as soon as possible.</br>
-  <br>5. On the occasion that I switch the server to a different game these rules will mostly remain the same especially in communication.</br>
-  <br>6. Lastly if your favorite menu resets you can always use this <a href="steam://connect/76.26.206.100:27016">Steam Direct Connect Link</a>
-  </p>
-  <span id="discord"><iframe src="https://discordapp.com/widget?id=480831014143262720&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" ></iframe></span>
+
+<!--____________________________________________________________________-->
+<!--This body has an id to avoid Discords body style to override how the body is styled-->
+<body id="TFG_Mainbody">
+
+<!--
+Two divs are made the first acts as a wrapper to move/position
+While the second acts as the content for borders and other styling
+-->
+  <div id="TFG_H_W">
+	<div id="TFG_H_C">
+		<img src="https://cdn.discordapp.com/icons/480831014143262720/9ac53a132ff1ea48690ac0cf5e16e51b.png?" id="TFG_Icon" class="TFG_Logo">
+		<img src="https://cdn.discordapp.com/icons/480831014143262720/9ac53a132ff1ea48690ac0cf5e16e51b.png?" id="TFG_Icon_2" class="TFG_Logo">
+		<h1 id="TFG_Heading">Welcome to The Future Guard's Space Engineers server</h1>
+	</div>
+ </div>
+ 
+<!--____________________________________________________________________-->
+
+ <div id="TFG_Rules_W">
+	<div id="TFG_Rules_C">
+		<h2 id="TFG_Rules" align="center">Rules</h2>
+		<hr>
+		<!--Ordered list to better organize the information, and clean the code-->
+		<ol id="TFG_Rules_ol" class="TFG_ol" align="left">
+			<li>No DDoSing, hacking or any other action that may harm the server or it's users.</li>
+			<br>
+			<li>Please follow the Future Guard discord rules when it comes to respect and appropriate behavior. <a href="https://discord.gg/7wYkNbG">Discord</a></li>
+			<br>
+			<li>Do not harass or anger the Admins. If done so they have the full right to ban or kick you.</li>
+			<br>
+			<li>If inside of CoolBeansCity please follow the rules listed there as well.</li>
+		</ol>
+	</div>
+</div>	
+
+<!--____________________________________________________________________-->
+
+<div id="SE_Rules_W">
+	<div id="SE_Rules_C">
+		<h2 id="SE_Rules" align="center">Other Information</h2>
+		<hr>
+		<!--Ordered list to better organize the information, and clean the code-->
+		<ol id="SE_Rules_ol" class="TFG_ol" align="left">
+			<li>if you are interested in playing on this server for long amounts of time I highly recommend you join the <a href="https://discord.gg/7wYkNbG">Future Guard discord</a>.</li>
+			<br>
+			<li>If you have any questions about the admininistration or events concering the server contact @XXX_pdwλwe_XXX™ on the discord. If it is a private matter first ping me once. I will then respond in the dms where we can privately chat.</li>
+			<br>
+			<li>Do not ping me if your question in concering the discord I recommend using the chat given to you. Again I am not the owner of the discord just the Space Engineers server.</li>
+			<br>
+			<li>If the server is not running or you notice and issue contact me I will respond as soon as possible.</li>
+			<br>
+			<li>On the occasion that I switch the server to a different game these rules will mostly remain the same especially in communication.</li>
+			<br>
+			<li>Lastly if your favorite menu resets you can always use this <a href="steam://connect/76.26.206.100:27016">Steam Direct Connect Link.</a></li>
+		</ol>
+	</div>
 </div>
 
+<!--____________________________________________________________________-->
 
-
-
-
-
+ <span id="discord"><iframe src="https://discordapp.com/widget?id=480831014143262720&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" ></iframe></span>
 </body>
 </html>
