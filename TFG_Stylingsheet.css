@@ -1,0 +1,59 @@
+﻿#TFG_Mainbody
+{
+background-color:#2C2F33;
+}
+#TFG_H_W{
+	top:0px;
+	width:30%;
+	height:126px;
+	position:absolute;
+	left:35%;
+	background:-webkit-linear-gradient(black,#2C2F33,black);
+	border-bottom:2px solid black;
+
+}
+#TFG_Icon{
+	position:absolute;
+	top:0px;
+	border-bottom-right-radius:30px
+}
+#TFG_Icon_2{
+	position:absolute;
+	top:0px;
+	left:-22%;
+	border-bottom-left-radius:30px;
+}
+#TFG_Rules_W{
+	position:absolute;
+	top:14%;
+}
+#TFG_Rules_C{
+	border:3px solid black;
+	width:75%;
+	border-radius:20px;
+	background:-webkit-radial-gradient(#2C2F33,#5a5d60,#2C2F33);
+}
+#TFG_Rules{
+	position:relative;
+	left:42.5%;
+}
+#SE_Rules_W{
+	position:absolute;
+	top:55%;
+}
+#SE_Rules_C{
+	border:3px solid black;
+	width:35%;
+	height:470px;
+	border-radius:20px;
+	background:-webkit-radial-gradient(#2C2F33,#5a5d60,#2C2F33);
+}
+#SE_Rules{
+	position:relative;
+	left:31%;
+}
+#discord{
+	position:absolute;
+	right:1%;
+	top:14%;
+}
