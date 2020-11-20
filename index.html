@@ -1,238 +1,113 @@
-<!--Welcome to My steam Page--> 
-<!DOCTYPE html>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head><script>var animate = window.requestAnimationFrame ||
-  window.webkitRequestAnimationFrame ||
-  window.mozRequestAnimationFrame ||
-  function(callback) { window.setTimeout(callback, 1000/60) };
-  var canvas = document.createElement('canvas');
-var width = 400;
-var height = 600;
-canvas.width = width;
-canvas.height = height;
-var context = canvas.getContext('2d');
-window.onload = function() {
-  document.body.appendChild(canvas);
-  animate(step);
-};
-var step = function() {
-  update();
-  render();
-  animate(step);
-};
-var update = function() {
-};
 
-var render = function() {
-  context.fillStyle = "#d3d3d3";
-  context.fillRect(0, 0, width, height);
-};
-function Paddle(x, y, width, height) {
-  this.x = x;
-  this.y = y;
-  this.width = width;
-  this.height = height;
-  this.x_speed = 0;
-  this.y_speed = 0;
-}
+	<title>Libertarian Server Network</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
-Paddle.prototype.render = function() {
-  context.fillStyle = "#0000ff";
-  context.fillRect(this.x, this.y, this.width, this.height);
-};
-function Player() {
-   this.paddle = new Paddle(175, 580, 50, 10);
-}
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-function Computer() {
-  this.paddle = new Paddle(175, 10, 50, 10);
-}
-Player.prototype.render = function() {
-  this.paddle.render();
-};
+			<div id="page-wrapper">
 
-Computer.prototype.render = function() {
-  this.paddle.render();
-};
-function Ball(x, y) {
-  this.x = x;
-  this.y = y;
-  this.x_speed = 0;
-  this.y_speed = 3;
-  this.radius = 5;
-}
+					<header id="header" class="alt">
+						<h1><a href="index.html">Libertarian Server Network</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
-Ball.prototype.render = function() {
-  context.beginPath();
-  context.arc(this.x, this.y, this.radius, 2 * Math.PI, false);
-  context.fillStyle = "#000000";
-  context.fill();
-};
-var player = new Player();
-var computer = new Computer();
-var ball = new Ball(200, 300);
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="applications.html">Applications</a></li>
+								<li><a href="suggestions.html">Suggestions</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
 
-var render = function() {
-  context.fillStyle = "#ffffff";
-  context.fillRect(0, 0, width, height);
-  player.render();
-  computer.render();
-  ball.render();
-};
-var update = function() {
-  ball.update();
-};
+					<section id="banner">
+						<div class="inner">
+							<h2>Libertarian Server Network</h2>
+							<p>A server network where rules are nearly nonexistent.</p>
+						</div>
+					</section>
 
-Ball.prototype.update = function() {
-  this.x += this.x_speed;
-  this.y += this.y_speed;
-};
-var update = function() {
-  ball.update(player.paddle, computer.paddle);
-};
+					<section id="wrapper">
 
-Ball.prototype.update = function(paddle1, paddle2) {
-  this.x += this.x_speed;
-  this.y += this.y_speed;
-  var top_x = this.x - 5;
-  var top_y = this.y - 5;
-  var bottom_x = this.x + 5;
-  var bottom_y = this.y + 5;
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/ron.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Libertarian Space Engineers Creative Server</h2>
+										<p>The original Libertarian server. Avoid insanely large grids and grids with many subgrids here! If your grid is not hurting server performance it can stay.</p>
+										<p>IP: 76.26.206.100:27016</p>
+										<p>Or click <a href="steam://connect/76.26.206.100:27016">here</a> to direct connect.</p>
+									</div>
+								</div>
+							</section>
 
-  if(this.x - 5 < 0) { // hitting the left wall
-    this.x = 5;
-    this.x_speed = -this.x_speed;
-  } else if(this.x + 5 > 400) { // hitting the right wall
-    this.x = 395;
-    this.x_speed = -this.x_speed;
-  }
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/rand.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Libertarian Space Engineers Survival Server</h2>
+										<p>Survive with different seasons. Each season has adds a unique twist to the survival experience.</p>
+										<p>IP: 76.26.206.100:27050</p>
+										<p>Or click <a href="steam://connect/76.26.206.100:27050">here</a> to direct connect.</p>
+									</div>
+								</div>
+							</section>
 
-  if(this.y < 0 || this.y > 600) { // a point was scored
-    this.x_speed = 0;
-    this.y_speed = 3;
-    this.x = 200;
-    this.y = 300;
-  }
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/gordon.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Libertarian Garry's Mod Server</h2>
+										<p>If you need a break from SE, this Garry's Mod Server might suite you. Mess around to your heart's content. Just don't crash it. That'd be bad.</p>
+										<p>IP: 76.26.206.100:27015</p>
+										<p>Or click <a href="steam://connect/76.26.206.100:27015">here</a> to direct connect.</p>
+									</div>
+								</div>
+							</section>
 
-  if(top_y > 300) {
-    if(top_y < (paddle1.y + paddle1.height) && bottom_y > paddle1.y && top_x < (paddle1.x + paddle1.width) && bottom_x > paddle1.x) {
-      // hit the player's paddle
-      this.y_speed = -3;
-      this.x_speed += (paddle1.x_speed / 2);
-      this.y += this.y_speed;
-    }
-  } else {
-    if(top_y < (paddle2.y + paddle2.height) && bottom_y > paddle2.y && top_x < (paddle2.x + paddle2.width) && bottom_x > paddle2.x) {
-      // hit the computer's paddle
-      this.y_speed = 3;
-      this.x_speed += (paddle2.x_speed / 2);
-      this.y += this.y_speed;
-    }
-  }
-};
-var keysDown = {};
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/vermin.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Libertarian Minecraft Server</h2>
+										<p>Coming Soon™.</p>
+									</div>
+								</div>
+							</section>					
 
-window.addEventListener("keydown", function(event) {
-  keysDown[event.keyCode] = true;
-});
+					</section>
+					
+					<section id="footer">
+					<p align=center>Website design by HTML5UP and FlamePoint.</p>
+					</section>
 
-window.addEventListener("keyup", function(event) {
-  delete keysDown[event.keyCode];
-});
-var update = function() {
-  player.update();
-  ball.update(player.paddle, computer.paddle);
-};
+			</div>
 
-Player.prototype.update = function() {
-  for(var key in keysDown) {
-    var value = Number(key);
-    if(value == 37) { // left arrow
-      this.paddle.move(-4, 0);
-    } else if (value == 39) { // right arrow
-      this.paddle.move(4, 0);
-    } else {
-      this.paddle.move(0, 0);
-    }
-  }
-};
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-Paddle.prototype.move = function(x, y) {
-  this.x += x;
-  this.y += y;
-  this.x_speed = x;
-  this.y_speed = y;
-  if(this.x < 0) { // all the way to the left
-    this.x = 0;
-    this.x_speed = 0;
-  } else if (this.x + this.width > 400) { // all the way to the right
-    this.x = 400 - this.width;
-    this.x_speed = 0;
-  }
-}
-var update = function() {
-  player.update();
-  computer.update(ball);
-  ball.update(player.paddle, computer.paddle);
-};
-
-Computer.prototype.update = function(ball) {
-  var x_pos = ball.x;
-  var diff = -((this.paddle.x + (this.paddle.width / 2)) - x_pos);
-  if(diff < 0 && diff < -4) { // max speed left
-    diff = -5;
-  } else if(diff > 0 && diff > 4) { // max speed right
-    diff = 5;
-  }
-  this.paddle.move(diff, 0);
-  if(this.paddle.x < 0) {
-    this.paddle.x = 0;
-  } else if (this.paddle.x + this.paddle.width > 400) {
-    this.paddle.x = 400 - this.paddle.width;
-  }
-};
-    </script>
-  <meta charset="utf-8" />
-    
-    
-<style>
-  @font-face { font-family: Universal Union; src: url('Universal Union.ttf'); } 
-  body {text-align :right; font-family :Universal Union;}
-.mainbody {text-align:center; background-color:white; position:fixed; border:5px solid red;}
-.widget {text-align :center; top :15px;}
-.info { background-color:#ffffff; position:absolute; text-align:center; border:2px dotted black; font-size:12px;}
-.vid {text-align :center; top:15px;}
-  .side {background-color:white; border:5px solid red; position:absolute;}
-  .fontd {text-align:center; border:5px solid black; background-color:white; top:300px; position:absolute;} a:link, a:visited {
-    background-color:#f7f7f7;
-    color: black;
-    padding: 10px 25px;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
-}
-    a:hover, a:active {
-    background-color: #919191;
-}
-
-    </style> 
-    
-    
-
-    
-  <link rel="shortcut icon" href="CACNER.ico" type="image/x-icon">
-<title>pdw.co</title>
- <body background="community_image_1424186332.gif">
-
-  </head>
-  <body>
-    
-    <div class="mainbody"><h1>Welcome</h1><p>Welcome to <a href="https://steamcommunity.com/groups/RAnD0mp30pl3">RAnD0mp30pl3.co</a></br></p></div>
-  <!--This JS file is for pong if you want to have pong on your own website :)-->
-  <div class="info"><p>This website is dedicated to sending out information about me!</br> <a href="https://widgetbot.io/channels/376101918897995786/376105111828692993/">The_Squad</a> is a premium discord that will be personally given to you if you prove youself worthy!!!</br><a href="Arkids.html">ARK IDS</a> <a href="https://drive.google.com/file/d/1t0m4BA1DPiSHhKriZDihmAwb9z-p86VL/view?usp=sharing">Guap Survival</a> <a href=" salien.html">Salien</a> <a href="https://sites.google.com/view/pdwawe/home"> Backup Site</a><a href="https://www.dropbox.com/sh/06nhik07ewksag5/AAD-Ii4ndn1-hP3dBAEvciera?dl=0">Steven's Demise!</a><a href="https://www.dropbox.com/sh/ph09v4n1yiyzfkm/AADB9LAFBpWM90WO2bNum6Eya?dl=0">Car Game<a></p></div>
-<div class="fontd"><p><a href="Universal Union.ttf"><br>Download this font if your</br> website doesn't format correctly</a> 
-<div class="Side"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/329460063&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div class="widget"><iframe src="https://discordapp.com/widget?id=376101918897995786&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></div>
-<div class="vid"><iframe width="350" height="250" src="https://www.youtube.com/embed/jsPCplGv6kk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></div>
-
-  </body>
-  </html>
+	</body>
+</html>
