@@ -29,7 +29,7 @@
     "graphql": "^0.13.2",
     "graphql-request": "^1.5.1",
     "graphql-tag": "^2.8.0",
-    "highlight.js": "^9.12.0",
+    "highlight.js": "^10.4.1",
     "kolor": "^1.1.9",
     "lodash": "^4.17.10",
     "moment": "^2.22.1",
