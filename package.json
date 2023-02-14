@@ -45,7 +45,7 @@
     "react-transition-group": "^2.3.1",
     "recompose": "^0.27.0",
     "scroll-into-view-if-needed": "^2.2.2",
-    "simple-markdown": "^0.4.0",
+    "simple-markdown": "^0.6.1",
     "socket.io-client": "^2.1.0",
     "textarea-caret": "^3.1.0",
     "uuid": "^3.2.1"
